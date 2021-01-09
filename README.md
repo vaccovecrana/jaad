@@ -14,6 +14,6 @@ This library is available on Bintray's `jcenter` as a Maven/Gradle download.<br>
 
 ```groovy
 dependencies {
-  compile 'net.sourceforge.jaadec:jaad:<VERSION>'
+  compile 'io.vacco.jaad:jaad:<VERSION>'
 }
 ```
