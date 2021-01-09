@@ -6,20 +6,20 @@ import net.sourceforge.jaad.mp4.boxes.FullBox;
 
 public class RequirementBox extends FullBox {
 
-	private String requirement;
+  private String requirement;
 
-	public RequirementBox() {
-		super("Requirement Box");
-	}
+  public RequirementBox() {
+    super("Requirement Box");
+  }
 
-	@Override
-	public void decode(MP4InputStream in) throws IOException {
-		super.decode(in);
+  @Override
+  public void decode(MP4InputStream in) throws IOException {
+    super.decode(in);
 
-		requirement = in.readString((int) getLeft(in));
-	}
+    requirement = in.readString((int) getLeft(in));
+  }
 
-	public String getRequirement() {
-		return requirement;
-	}
+  public String getRequirement() {
+    return requirement;
+  }
 }

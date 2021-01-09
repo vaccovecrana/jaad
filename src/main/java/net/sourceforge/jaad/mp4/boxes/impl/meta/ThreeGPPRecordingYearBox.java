@@ -6,20 +6,20 @@ import net.sourceforge.jaad.mp4.boxes.FullBox;
 
 public class ThreeGPPRecordingYearBox extends FullBox {
 
-	private int year;
+  private int year;
 
-	public ThreeGPPRecordingYearBox() {
-		super("3GPP Recording Year Box");
-	}
+  public ThreeGPPRecordingYearBox() {
+    super("3GPP Recording Year Box");
+  }
 
-	@Override
-	public void decode(MP4InputStream in) throws IOException {
-		super.decode(in);
+  @Override
+  public void decode(MP4InputStream in) throws IOException {
+    super.decode(in);
 
-		year = (int) in.readBytes(2);
-	}
+    year = (int) in.readBytes(2);
+  }
 
-	public int getYear() {
-		return year;
-	}
+  public int getYear() {
+    return year;
+  }
 }

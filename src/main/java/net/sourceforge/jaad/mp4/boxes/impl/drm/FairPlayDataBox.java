@@ -6,21 +6,21 @@ import net.sourceforge.jaad.mp4.boxes.BoxImpl;
 
 public class FairPlayDataBox extends BoxImpl {
 
-	private byte[] data;
+  private byte[] data;
 
-	public FairPlayDataBox() {
-		super("iTunes FairPlay Data Box");
-	}
+  public FairPlayDataBox() {
+    super("iTunes FairPlay Data Box");
+  }
 
-	@Override
-	public void decode(MP4InputStream in) throws IOException {
-		super.decode(in);
+  @Override
+  public void decode(MP4InputStream in) throws IOException {
+    super.decode(in);
 
-		data = new byte[(int) getLeft(in)];
-		in.readBytes(data);
-	}
+    data = new byte[(int) getLeft(in)];
+    in.readBytes(data);
+  }
 
-	public byte[] getData() {
-		return data;
-	}
+  public byte[] getData() {
+    return data;
+  }
 }

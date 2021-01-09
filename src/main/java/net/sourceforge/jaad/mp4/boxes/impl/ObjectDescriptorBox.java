@@ -7,19 +7,19 @@ import net.sourceforge.jaad.mp4.od.Descriptor;
 
 public class ObjectDescriptorBox extends FullBox {
 
-	private Descriptor objectDescriptor;
+  private Descriptor objectDescriptor;
 
-	public ObjectDescriptorBox() {
-		super("Object Descriptor Box");
-	}
+  public ObjectDescriptorBox() {
+    super("Object Descriptor Box");
+  }
 
-	@Override
-	public void decode(MP4InputStream in) throws IOException {
-		super.decode(in);
-		objectDescriptor = Descriptor.createDescriptor(in);
-	}
+  @Override
+  public void decode(MP4InputStream in) throws IOException {
+    super.decode(in);
+    objectDescriptor = Descriptor.createDescriptor(in);
+  }
 
-	public Descriptor getObjectDescriptor() {
-		return objectDescriptor;
-	}
+  public Descriptor getObjectDescriptor() {
+    return objectDescriptor;
+  }
 }

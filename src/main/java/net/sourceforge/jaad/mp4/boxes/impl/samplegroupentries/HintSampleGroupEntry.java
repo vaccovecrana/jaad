@@ -5,11 +5,10 @@ import net.sourceforge.jaad.mp4.MP4InputStream;
 
 public class HintSampleGroupEntry extends SampleGroupDescriptionEntry {
 
-	public HintSampleGroupEntry() {
-		super("Hint Sample Group Entry");
-	}
+  public HintSampleGroupEntry() {
+    super("Hint Sample Group Entry");
+  }
 
-	@Override
-	public void decode(MP4InputStream in) throws IOException {
-	}
+  @Override
+  public void decode(MP4InputStream in) throws IOException {}
 }

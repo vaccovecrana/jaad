@@ -1,15 +1,6 @@
-# gradle
-/build/
-/.gradle/
+build/
+.gradle/
+gradle/
+gradlew*
 
-# eclipse files
-.classpath
-.project
-.settings/
-/bin/
-
-# intellij files
-/.idea/
-*.iml
-*.ipr
-*.iws
+.idea/
