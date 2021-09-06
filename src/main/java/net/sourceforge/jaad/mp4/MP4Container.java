@@ -33,12 +33,13 @@ import net.sourceforge.jaad.mp4.boxes.impl.ProgressiveDownloadInformationBox;
  * Optionally, the following data may be present:
  *
  * <ul>
- *   <li>progressive download informations: pairs of download rate and playback delay, see {@link
- *       #getDownloadInformationPairs() getDownloadInformationPairs()}
+ *   <li>
+ *     progressive download information: pairs of download rate and playback delay,
+ *     see getDownloadInformationPairs()
  *   <li>a <code>Movie</code>
  * </ul>
  *
- * Additionally it gives access to the underlying MP4 boxes, that can be retrieved by <code>
+ * Additionally, it gives access to the underlying MP4 boxes, that can be retrieved by <code>
  * getBoxes()</code>. However, it is not recommended to access the boxes directly.
  *
  * @author in-somnia

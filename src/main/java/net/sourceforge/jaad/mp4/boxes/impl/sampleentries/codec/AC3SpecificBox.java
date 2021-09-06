@@ -5,9 +5,9 @@ import net.sourceforge.jaad.mp4.MP4InputStream;
 
 /**
  * This box contains parameters for AC-3 decoders. For more information see the AC-3 specification "
- * <code>ETSI TS 102 366 V1.2.1 (2008-08)</code>" at <a
- * href="http://www.etsi.org/deliver/etsi_ts/102300_102399/102366/01.02.01_60/ts_102366v010201p.pdf>
- * http://www.etsi.org/deliver/etsi_ts/102300_102399/102366/01.02.01_60/ts_102366v010201p.pdf</a>.
+ * &lt;code&gt;ETSI TS 102 366 V1.2.1 (2008-08)&lt;/code&gt;&quot; at &lt;a
+ *  href=&quot;http://www.etsi.org/deliver/etsi_ts/102300_102399/102366/01.02.01_60/ts_102366v010201p.pdf&gt;
+ * http://www.etsi.org/deliver/etsi_ts/102300_102399/102366/01.02.01_60/ts_102366v010201p.pdf&lt;/a&gt;.
  *
  * @author in-somnia
  */

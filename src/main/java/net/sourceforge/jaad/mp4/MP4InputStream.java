@@ -190,7 +190,7 @@ public class MP4InputStream {
    * Peeks up to eight bytes as a long value. This method blocks until all bytes could be read, the
    * end of the stream is detected, or an I/O error occurs.
    *
-   * @param n the number of bytes to read >0 and <=8
+   * @param n the number of bytes to read &gt;0 and &lt;=8
    * @return the read bytes as a long value
    * @throws IOException If the end of the stream is detected, the input stream has been closed, or
    *     if some other I/O error occurs.
@@ -213,7 +213,7 @@ public class MP4InputStream {
    * Reads up to eight bytes as a long value. This method blocks until all bytes could be read, the
    * end of the stream is detected, or an I/O error occurs.
    *
-   * @param n the number of bytes to read >0 and <=8
+   * @param n the number of bytes to read &gt;0 and &lt;=8
    * @return the read bytes as a long value
    * @throws IOException If the end of the stream is detected, the input stream has been closed, or
    *     if some other I/O error occurs.
