@@ -14,3 +14,8 @@ val jar by tasks.getting(Jar::class) {
     attributes["Main-Class"] = "net.sourceforge.jaad.Radio"
   }
 }
+
+tasks.withType<JavaCompile> {
+  val compilerArgs = options.compilerArgs
+  compilerArgs.add("-Xdoclint:none,-missing")
+}
