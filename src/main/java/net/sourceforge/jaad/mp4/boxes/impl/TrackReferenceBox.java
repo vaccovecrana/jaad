@@ -43,11 +43,11 @@ public class TrackReferenceBox extends BoxImpl {
    * The reference type shall be set to one of the following values:
    *
    * <ul>
-   *   <li>'hint': the referenced track(s) contain the original media for this hint track.
-   *   <li>'cdsc': this track describes the referenced track.
+   *   <li>'hint': the referenced track(s) contain the original media for this hint track.</li>
+   *   <li>'cdsc': this track describes the referenced track.</li>
    *   <li>'hind': this track depends on the referenced hint track, i.e., it should only be used if
-   *       the referenced hint track is used.
-   *
+   *       the referenced hint track is used.</li>
+   * </ul>
    * @return the reference type
    */
   public String getReferenceType() {

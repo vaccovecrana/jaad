@@ -52,16 +52,17 @@ public class OMACommonHeadersBox extends FullBox {
    * are defined in the following table:
    *
    * <table>
+   * <caption></caption>
    * <tr><th>Value</th><th>Algorithm</th></tr>
    * <tr><td>0</td><td>no encryption used</td></tr>
-   * <tr><td>1</td><td>AES_128_CBC:<br />AES symmetric encryption as defined
+   * <tr><td>1</td><td>AES_128_CBC: AES symmetric encryption as defined
    * by NIST. 128 bit keys, Cipher block chaining mode (CBC). For the first
    * block a 128-bit initialisation vector (IV) is used. For DCF files, the IV
    * is included in the OMADRMData as a prefix of the encrypted data. For
    * non-streamable PDCF files, the IV is included in the IV field of the
    * OMAAUHeader and the IVLength field in the OMAAUFormatBox MUST be set to
    * 16. Padding according to RFC 2630</td></tr>
-   * <tr><td>2</td><td>AES_128_CTR:<br />AES symmetric encryption as defined
+   * <tr><td>2</td><td>AES_128_CTR: AES symmetric encryption as defined
    * by NIST. 128 bit keys, Counter mode (CTR). The counter block has a length
    * of 128 bits. For DCF files, the initial counter value is included in the
    * OMADRMData as a prefix of the encrypted data. For non-streamable PDCF
@@ -82,6 +83,7 @@ public class OMACommonHeadersBox extends FullBox {
    * scheme field are defined in the following table:
    *
    * <table>
+   * <caption></caption>
    * <tr><th>Value</th><th>Padding scheme</th></tr>
    * <tr><td>0</td><td>No padding (e.g. when using NULL or CTR algorithm)</td></tr>
    * <tr><td>1</td><td>Padding according to RFC 2630</td></tr>

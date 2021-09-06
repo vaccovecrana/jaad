@@ -75,6 +75,7 @@ public class TrackSelectionBox extends FullBox {
    * <p>The following attributes are descriptive:
    *
    * <table>
+   * <caption></caption>
    * <tr><th>Name</th><th>Attribute</th><th>Description</th></tr>
    * <tr><td>Temporal scalability</td><td>'tesc'</td><td>The track can be
    * temporally scaled.</td></tr>
@@ -90,27 +91,22 @@ public class TrackSelectionBox extends FullBox {
    *
    * <p>The following attributes are differentiating:
    *
-   * <table><tr><th>Name</th><th>Attribute</th><th>Pointer</th></tr>
-   * <tr><td>Codec</td><td>'cdec'</td><td>Sample Entry (in Sample Description
-   * box of media track)</td></tr>
-   * <tr><td>Screen size</td><td>'scsz'</td><td>Width and height fields of
-   * Visual Sample Entries.</td></tr>
-   * <tr><td>Max packet size</td><td>'mpsz'</td><td>Maxpacketsize field in RTP
-   * Hint Sample Entry</td></tr>
-   * <tr><td>Media type</td><td>'mtyp'</td><td>Handlertype in Handler box (of
-   * media track)</td></tr>
-   * <tr><td>Media language</td><td>'mela'</td><td>Language field in Media
-   * Header box</td></tr>
-   * <tr><td>Bitrate</td><td>'bitr'</td><td>Total size of the samples in the
-   * track divided by the duration in the track header box</td></tr>
-   * <tr><td>Frame rate</td><td>'frar'</td><td>Number of samples in the track
-   * divided by duration in the track header box</td></tr>
+   * <table>
+   *   <caption></caption>
+   *   <tr><th>Name</th><th>Attribute</th><th>Pointer</th></tr>
+   *   <tr><td>Codec</td><td>'cdec'</td><td>Sample Entry (in Sample Description box of media track)</td></tr>
+   *   <tr><td>Screen size</td><td>'scsz'</td><td>Width and height fields of Visual Sample Entries.</td></tr>
+   *   <tr><td>Max packet size</td><td>'mpsz'</td><td>Maxpacketsize field in RTP Hint Sample Entry</td></tr>
+   *   <tr><td>Media type</td><td>'mtyp'</td><td>Handlertype in Handler box (of media track)</td></tr>
+   *   <tr><td>Media language</td><td>'mela'</td><td>Language field in Media Header box</td></tr>
+   *   <tr><td>Bitrate</td><td>'bitr'</td><td>Total size of the samples in the track divided by the duration in the track header box</td></tr>
+   *   <tr><td>Frame rate</td><td>'frar'</td><td>Number of samples in the track divided by duration in the track header box</td></tr>
    * </table>
    *
    * <p>Descriptive attributes characterize the tracks they modify, whereas differentiating
    * attributes differentiate between tracks that belong to the same alternate or switch groups. The
    * pointer of a differentiating attribute indicates the location of the information that
-   * differentiates the track from other tracks with the same attribute.
+   * differentiates the track from other tracks with the same attribute.</p>
    */
   public List<Long> getAttributes() {
     return Collections.unmodifiableList(attributes);

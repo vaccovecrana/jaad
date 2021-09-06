@@ -19,6 +19,7 @@ import net.sourceforge.jaad.mp4.boxes.FullBox;
  * <ul>
  *   <li>If the offset is not identified (the field has a length of zero), then the beginning of the
  *       file (offset 0) is implied.
+ *   </li>
  *   <li>If the length is not specified, or specified as zero, then the entire file length is
  *       implied. References into the same file as this metadata, or items divided into more than
  *       one extent, should have an explicit offset and length, or use a MIME type requiring a
@@ -33,7 +34,8 @@ import net.sourceforge.jaad.mp4.boxes.FullBox;
  *       included within a file formatted to this specification, then normally data-offsets within
  *       that MP4 section are relative to the beginning of file; the base offset adds to those
  *       offsets.
- *
+ *   </li>
+ * </ul>
  * @author in-somnia
  */
 public class ItemLocationBox extends FullBox {

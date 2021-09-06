@@ -94,6 +94,7 @@ public class AC3SpecificBox extends CodecSpecificBox {
    * table:
    *
    * <table>
+   * <caption></caption>
    * <tr><th>bit rate code</th><th>bit rate (kbit/s)</th></tr>
    * <tr><td>0</td><td>32</td></tr>
    * <tr><td>1</td><td>40</td></tr>

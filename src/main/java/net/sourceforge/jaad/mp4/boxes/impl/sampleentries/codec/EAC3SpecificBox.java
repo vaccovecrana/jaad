@@ -143,6 +143,7 @@ public class EAC3SpecificBox extends CodecSpecificBox {
    * table, where index 0 is the most significant bit of all 9 used bits:
    *
    * <table>
+   * <caption></caption>
    * <tr><th>Bit</th><th>Location</th></tr>
    * <tr><td>0</td><td>Lc/Rc pair</td></tr>
    * <tr><td>1</td><td>Lrs/Rrs pair</td></tr>
