@@ -1,14 +1,12 @@
-plugins { id("io.vacco.common-build") version "0.5.3" }
+plugins { id("io.vacco.oss.gitflow") version "0.9.7" }
 
 group = "io.vacco.jaad"
 version = "0.8.7"
 
-configure<io.vacco.common.CbPluginProfileExtension> {
-  addGoogleJavaFormat()
-  addSpotBugs()
+configure<io.vacco.oss.gitflow.GsPluginProfileExtension> {
+  addJ8Spec()
   addClasspathHell()
-  setPublishingUrlTransform { repo -> "${repo.url}/${project.name}" }
-  sharedLibrary()
+  sharedLibrary(true, false)
 }
 
 val jar by tasks.getting(Jar::class) {
