@@ -65,6 +65,11 @@ public class AACAudioFileReader extends AudioFileReader {
     in.read(head);
     boolean canHandle = false;
     if (new String(head, 4, 4).equals("ftyp")) canHandle = true;
+    else if ((head[0] == 'I')
+        && (head[1] == 'D')
+        && (head[2] == '3')) {
+      canHandle = false; // potential MP3 stream found
+    }
     // This code is pulled directly from MP3-SPI.
     else if ((head[0] == 'R')
         && (head[1] == 'I')
